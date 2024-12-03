@@ -1,0 +1,93 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+nav li{
+    list-style-type: none;
+}
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #fff;
+}
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+.soumenu{
+    display: none;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav li:hover .soumenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.soumenu{
+    border-bottom: 1px solid#ccc;
+}
+.soumenu li a{
+    padding: 15px 30px; 
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+.home:hover{
+    border-top: 5px solid #c44d26;
+    background-color: rgba(228, 77, 38, 0.15 );
+}
+.about:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15 );
+}
+.form:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15 );
+}
+.contact:hover{
+    border-top: 5px solid #BBB;
+    background-color: rgba(220, 220, 220, 0.15 );
+}
+.home .soumenu{
+    background-color: rgb(230,100,40);
+}
+.about .soumenu{
+    background-color: rgb(000,160,240);
+}
+.form .soumenu{
+    background-color: rgb(250,215,100);
+}
+.soumenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+.home .soumenu li:hover{
+    background-color: rgb(210, 77, 60);
+}
+.about .soumenu li:hover{
+    background-color: rgb(000, 115, 200);
+}
+.form .soumenu li:hover{
+    background-color: rgb(200, 165, 75);
+}
